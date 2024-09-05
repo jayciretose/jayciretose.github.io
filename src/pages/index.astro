@@ -1,1 +1,17 @@
- 
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ThreeScene from '../components/ThreeScene.astro';
+---
+
+<Layout title="Your Portfolio">
+  <Header />
+  <main class="flex flex-col items-center justify-center min-h-screen">
+    <h1 class="text-4xl font-bold mb-8">Welcome to My Portfolio</h1>
+    <div class="w-64 h-64 bg-gray-200">
+      <ThreeScene />
+    </div>
+  </main>
+  <Footer />
+</Layout>
